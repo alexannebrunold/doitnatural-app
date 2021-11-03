@@ -1,0 +1,48 @@
+.base-button-padding {
+  padding: var(--padding-top-bottom) var(--padding-left-right);
+}
+
+.button-primary {
+  @extend .base-button-padding;
+
+  color: var(--white);
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // height: 60px;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  &:hover {
+    background-color: blue;
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline-offset: 4px;
+    outline: 2px solid var(--primary-color);
+  }
+}
+
+.button-primary-white {
+  @extend .base-button-padding;
+
+  color: var(--black);
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // height: 60px;
+  background-color: var(--white);
+  border-radius: 8px;
+  &:hover {
+    background-color: blue;
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline-offset: 4px;
+    outline: 2px solid var(--white);
+  }
+}
+
