@@ -6,7 +6,7 @@
       <li>Maison</li>
       <li>Beauté</li>
       <li>Articles</li>
-      <BaseButton typeOfButton="primaryButtonWhite"> Coucou </BaseButton>
+      <BaseButton typeOfButton="primaryButtonWhite" class="x"> Coucou </BaseButton>
     </ul>
   </nav>
 </template>
@@ -20,5 +20,10 @@
         width: 50%;
         align-items: center;
       }
+  }
+
+  .x {
+    width: 32px;
+    height: 24px;
   }
 </style>

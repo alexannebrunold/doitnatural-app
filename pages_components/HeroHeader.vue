@@ -7,9 +7,9 @@
         faites maison préférées
       </p>
 
-      <BaseButton typeOfButton="primaryButtonWhite" class="heybtn"
-        >Inscris toi</BaseButton
-      >
+      <BaseButton typeOfButton="primaryButtonWhite" class="heybtn">
+        Inscris toi
+      </BaseButton>
       <p class="text-inscription">
         Tu fais pas partie d'ici ? <href>Inscris-toi.</href>
       </p>
@@ -20,18 +20,23 @@
 
 <style lang="scss" scoped>
 .flexx {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
   @media screen and (min-width: 640px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-    padding-bottom: 32px;
-
+  padding-bottom: 32px;
 }
 
 .heybtn {
   margin-bottom: 20px;
+  align-self: center;
 }
 
 .left {
@@ -39,6 +44,7 @@
   flex-direction: column;
   width: 60%;
 }
+
 h1 {
   color: #fafafa;
   font-family: "Oswald", sans-serif;

@@ -27,17 +27,19 @@
 .button-primary-white {
   @extend .base-button-padding;
 
-  color: var(--black);
-  border: 2px solid transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 180px;
-  background-color: var(--white);
+  background-color: transparent;
   border-radius: 8px;
+
   &:hover {
-    background-color: blue;
+    background-color: var(--white);
     outline: none;
+    color: var(--black);
   }
 
   &:focus-visible {
