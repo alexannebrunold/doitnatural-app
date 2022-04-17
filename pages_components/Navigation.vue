@@ -1,8 +1,8 @@
 <template>
-  <nav class="flex">
-    <h1>Do It Natural</h1>
+  <nav class="flex bg-primary-color ">
+    <h1 class="logo">DO IT NATURAL</h1>
 
-    <ul class="nav">
+    <ul class="nav left">
       <li>Maison</li>
       <li>Beauté</li>
       <li>Articles</li>
@@ -26,4 +26,17 @@
     width: 32px;
     height: 24px;
   }
+
+.logo {
+  font-size: 32px;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (min-width: 640px) {
+    justify-content: flex-end;
+  }
+}
 </style>
